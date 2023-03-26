@@ -1,36 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<div id="main">
+    <h1>1. First Server</h1><br>
+    <h2>What is Express?</h2><br>
+    <p>Express is a popular, open-source web application framework for Node.js. It provides a set of features and
+        tools that simplify the development of web applications in Node.js. Express is designed to be lightweight,
+        flexible, and modular, which makes it suitable for building small to large-scale web applications.</p>
+    <p>Express provides many features that make web application development easier, such as routing, middleware, and
+        template engine support. Routing allows developers to define how the application responds to client requests
+        for specific URLs, while middleware functions can be used to handle authentication, logging, and other
+        common tasks. Express also supports a wide variety of template engines, including Pug, EJS, and Handlebars,
+        which makes it easy to render dynamic HTML pages with minimal code.</p>
+    <p>Express is highly extensible and customizable, allowing developers to add third-party plugins and middleware
+        to enhance its functionality. Additionally, it has a large and active community that provides many
+        resources, such as documentation, tutorials, and example code.</p>
+    <p>Overall, Express is a powerful and flexible web application framework that simplifies the development of
+        Node.js-based web applications, making it a popular choice among developers.</p><br>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <h2>Let's create your first project!</h2><br>
 
-    <title>Learn Node.js</title>
-</head>
+    <p><b>1. Create a folder for your project in your chosen IDE. Let's call it myNodeSite</b></p>
+    <p><b>2. In your terminal change your directory to that folder: cd myNodeSite</b></p>
+    <p><b>3. Install express: npm install express</b></p>
+    <p>Installing express creates a package.json file to handle dependencies, meta data, and scripts</p>
+    <p><b>4. Create a file called app.js</b></p>
+    <p><b>5. Write the following code in app.js</b></p>
 
-<body>
+    <pre><code class="language-javascript">import express from "express";
+        const app = express();
+        
+        const PORT = 8080;
+        app.listen(PORT, (error) => {
+            if (error) {
+                console.log(error);
+                return;
+            }
+            console.log("Server is running on port: " + PORT);
+        });
+</code></pre>
 
-    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-        <a href="/"><span><i class="material-icons">home</i><span class="icon-text">Home</span></a><br>
-        <a href="/firstServer"><span><i class="material-icons">arrow_right</i><span class="icon-text">1. First Server</span></a><br>
-        <a href="#"><span><i class="material-icons">arrow_right</i><span class="icon-text">Get started!</span></a><br>
-        <a href="#"><span><i class="material-icons">arrow_right</i><span class="icon-text">Get started!</span></a><br>
-        <a href="#"><span><i class="material-icons">arrow_right</i><span class="icon-text">Get started!</span></a><br>
+    <p><b>6. Run command: node app.js</b></p>
+    <p><b>7. Try it here to see the output!</b></p>
+    <input id="runNodeInput" placeholder="node app.js"></input><button onclick="startNode()">Enter</button>
+    <br><br><b>
+        <pre><code class="language-commandline" id="runNodeOutput"></code></pre>
+    </b><br>
+    <h3 id="gg-message"></h2>
+    <p id="tip8"></p><br>
+
+    <div class="nav-buttons">
+        <div class="left-button">
+            <a href="/getStarted"><span><i class="material-icons">keyboard_double_arrow_left</i><span
+                        class="icon-text"></span></a><br>
+        </div>
+        <div class="rigt-button">
+            <a href="/restAPI"><span><i class="material-icons">keyboard_double_arrow_right</i><span
+                        class="icon-text"></span></a><br>
+        </div>
     </div>
-
-    <div id="main">
-        <h2>What is Express?</h2>
-        <p>Express is a popular, open-source web application framework for Node.js. It provides a set of features and tools that simplify the development of web applications in Node.js. Express is designed to be lightweight, flexible, and modular, which makes it suitable for building small to large-scale web applications.</p>
-        <p>Express provides many features that make web application development easier, such as routing, middleware, and template engine support. Routing allows developers to define how the application responds to client requests for specific URLs, while middleware functions can be used to handle authentication, logging, and other common tasks. Express also supports a wide variety of template engines, including Pug, EJS, and Handlebars, which makes it easy to render dynamic HTML pages with minimal code.</p>
-        <p>Express is highly extensible and customizable, allowing developers to add third-party plugins and middleware to enhance its functionality. Additionally, it has a large and active community that provides many resources, such as documentation, tutorials, and example code.</p>
-        <p>Overall, Express is a powerful and flexible web application framework that simplifies the development of Node.js-based web applications, making it a popular choice among developers.</p>
-    
-    </div>
-
-    <script src="/js/sideMenu.js"></script>
-</body>
-
-</html>
+</div>

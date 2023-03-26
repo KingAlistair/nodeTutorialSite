@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/assets/css/login.css">
+
+</head>
+<body>
+<div id="login-form-wrap">
+  <h2>Login</h2>
+  <form id="login-form" method="POST" action="/login">
+    <p>
+    <input type="text" id="username" name="username" value="admin" placeholder="admin" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="text" id="password" name="password" value="admin" placeholder="admin" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="submit" id="login" value="Login">
+    </p>
+  </form>
+  <div id="create-account-wrap">
+    <p>Not a member? <a href="#">Create Account </a> (Work in Progress)<p>
+  </div>
+</div>
+
+</body>
+</html>
