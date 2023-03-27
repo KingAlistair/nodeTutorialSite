@@ -5,17 +5,19 @@ import fs from "fs";
 
 const app = express();
 
-app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
+app.use(express.urlencoded({extended: true}));
 
 //Paths
 const loginPagePath = "./public/pages/login.html"
 const frontPagePath = "./public/pages/frontpage.html";
-const getStartedPagePath = "./public/pages/getStarted.html";
-const firstServerPagePath = "./public/pages/firstServer.html";
+const getStartedPagePath = "./public/pages/getStartedPage.html";
+const firstServerPagePath = "./public/pages/firstServerPage.html";
 const firstPagePath = "./public/pages/firstPage.html";
-const restAPIPagePath = "./public/pages/restAPI.html";
-const loadHTMLPath = "./public/pages/loadHTML.html";
+const restAPIPagePath = "./public/pages/restAPIPage.html";
+const loadHTMLPath = "./public/pages/loadHTMLPage.html";
+const fetchPagePath = "./public/pages/fetchPage.html";
+const ssrPagePath = "./public/pages/ssrPage.html";
 
 //Endpoints
 //GET
@@ -47,6 +49,13 @@ app.get("/loadHTML", (req, res) => {
     res.send(renderPage(loadHTMLPath, "Load HTML"));
 });
 
+app.get("/fetch", (req, res) => {
+    res.send(renderPage(fetchPagePath, "Fetch"));
+});
+
+app.get("/ssr", (req, res) => {
+    res.send(renderPage(ssrPagePath, "SSR"));
+});
 
 //POST
 app.post("/login", (req, res) => {

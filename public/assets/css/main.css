@@ -66,7 +66,7 @@ main .sidemenu {
 }
 
 .nav-buttons {
-  margin-left: 33%;
+  margin-left: 31%;
   text-align: center;
 }
 
@@ -92,8 +92,9 @@ footer {
   margin-right: auto;
 }
 
-.create-site-form input, textarea {
-width: 100%;
+.create-site-form input,
+textarea {
+  width: 100%;
 }
 
 .center {
@@ -101,6 +102,14 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+
+.center-div {
+  margin: 0;
+  position: absolute;
+  left: 47.5%;
+}
+
+
 
 @media screen and (max-height: 450px) {
   .sidebar {

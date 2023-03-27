@@ -1,6 +1,10 @@
 import express from "express";
+
 const app = express();
 
+app.use(express.static("public"));
+app.use(express.urlencoded({extended: true}));
+app.use(express.static("public"));
 
 const PORT = 8080;
 app.listen(PORT, (error) => {
@@ -12,6 +16,12 @@ app.listen(PORT, (error) => {
 });
 
 app.use(express.json()); //Allows saving in json format.
+app.use(express.static("public"));
+
+
+app.get("/test", (req, res) => {
+  res.sendFile(__dirname + "/public/pages/fetch.html")
+});
 
 //Get all songs
 app.get("/songs", (req, res) => {

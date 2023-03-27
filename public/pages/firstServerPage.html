@@ -17,25 +17,35 @@
 
     <h2>Let's create your first project!</h2><br>
 
-    <p><b>1. Create a folder for your project in your chosen IDE. Let's call it myNodeSite</b></p>
-    <p><b>2. In your terminal change your directory to that folder: cd myNodeSite</b></p>
-    <p><b>3. Install express: npm install express</b></p>
-    <p>Installing express creates a package.json file to handle dependencies, meta data, and scripts</p>
+    <p><b>1. Create a folder for your project in your chosen IDEA. Let's call it myNodeSite</b></p>
+    <p><b>2. In your terminal change your directory to that folder.</b></p>
+    
+    <pre><code class="language-commandline">cd myNodeSite</code></pre>
+
+    <p><b>3. Install express </b></p>
+
+    <pre><code class="language-commandline">npm install express</code></pre>
+
+    <p>npm stands for Node Package Manager. It's a library and registry for JavaScript software packages.</p>
+    <p>Installing express creates a package.json file to handle dependencies, meta data, and scripts.</p>
     <p><b>4. Create a file called app.js</b></p>
     <p><b>5. Write the following code in app.js</b></p>
 
-    <pre><code class="language-javascript">import express from "express";
-        const app = express();
-        
-        const PORT = 8080;
-        app.listen(PORT, (error) => {
-            if (error) {
-                console.log(error);
-                return;
-            }
-            console.log("Server is running on port: " + PORT);
-        });
+    <pre><code class="language-javascript">const express = require("express");
+const app = express();
+
+const PORT = 8080;
+app.listen(PORT, (error) => {
+    if (error) {
+        console.log(error);
+        return;
+    }
+    console.log("Server is running on port: " + PORT);
+});
 </code></pre>
+
+    <p>This will let you run your own local server on PORT 8080.</p>
+    <p>At the REST API chapter we will create some endpoints to manage songs from our "database".</p>
 
     <p><b>6. Run command: node app.js</b></p>
     <p><b>7. Try it here to see the output!</b></p>

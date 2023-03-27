@@ -1,0 +1,100 @@
+<div id="main">
+    <h1>3. Fetch</h1><br>
+
+    <p>Now you know how to create API endpoints and send HTML pages with them. Now we will learn how to request them
+        using
+        fetch() in JavaScript, so you can write your own requests and handle data. We will use our song API that we previously created 
+        in <a href="/restAPI">2. REST API</a>. 
+    </p>
+
+    <p><b>1. GET request:</b></p>
+
+    <pre><code class="language-javascript">fetch("/songs/1")
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error));</code></pre>
+
+    <p>In this example, we're making a GET request to our
+        /songs/:id API to retrieve a single song with an ID of 1.
+        We're then parsing the response using the json() method and logging the resulting
+        data to the console. We can also use the /songs API without an ID to receive all songs.
+    </p>
+
+    <p><b>2. POST request</b></p>
+
+    <pre><code class="language-javascript">fetch("/songs", {
+method: 'POST',
+body: JSON.stringify({
+    id": 4,
+    "Band": "AC/DC",
+    "Album": "Back in Black",
+    "Song": "Hells Bells"
+}),
+headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+},
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error));</code></pre>
+
+    <p>In this example, we're making a POST request to the /songs API to create a new song.
+        We're sending a JSON payload in the request body with the new songs.
+        We're also specifying the Content-Type header to let the server know that we're sending JSON
+        data. Finally, we're parsing the response using the json() method and logging the resulting
+        data to the console.
+    </p>
+
+
+    <p><b>3. PUT request:</b></p>
+
+    <pre><code class="language-javascript">fetch('/songs/4', {
+method: 'PUT',
+body: JSON.stringify({
+    id": 4,
+    "Band": "AC/DC",
+    "Album": "Back in Black",
+    "Song": "Back in Black"
+}),
+headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+},
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error));</code></pre>
+
+    <p>In this example, we're making a PUT request to the /songs/:id API to update a song with an ID of 4. We're
+        sending a JSON payload in the request body with the updated song. We're also
+        specifying the Content-Type header to let the server know that we're sending JSON data. Finally, we're parsing
+        the response using the json() method and logging the resulting data to the console.
+    </p>
+
+    <p><b>4. DELETE request:</b></p>
+
+    <pre><code class="language-javascript">fetch("/songs/4", {
+        method: 'DELETE'
+      })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));</code></pre>
+
+    <p>In this example, we're making a DELETE request to the /songs/:id API to delete a post with an ID
+         of 1. We're not sending any request body, but we are specifying the DELETE method in the request 
+         options. Finally, we're parsing the response using the json() method and logging the resulting 
+         data to the console. Note that the server will not return any data in response to a DELETE 
+         request, so the data logged to the console in this case will be undefined.
+    </p><br><br>
+
+
+    <div class="nav-buttons">
+        <div class="left-button">
+            <a href="/restAPI"><span><i class="material-icons">keyboard_double_arrow_left</i><span
+                        class="icon-text"></span></a><br>
+        </div>
+        <div class="rigt-button">
+            <a href="/firstPage"><span><i class="material-icons">keyboard_double_arrow_right</i><span
+                        class="icon-text"></span></a><br>
+        </div>
+    </div>
+</div>

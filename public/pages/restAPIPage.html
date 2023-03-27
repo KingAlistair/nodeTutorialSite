@@ -6,15 +6,16 @@
         for building networked applications.</p><br>
 
     <h2><b>API conventions</b></h3>
-    <p><b>1. Order by the type of request!</b></p>
-    <p><b>2. Endpoints are always plural!</b></p>
+        <p><b>1. Order by the type of request!</b></p>
+        <p><b>2. Endpoints are always plural!</b></p>
 
-    <image src="/assets/images/restAPI.jpg" class="center"></image><br><br>
+        <image src="/assets/images/restAPI.jpg" class="center"></image><br><br>
 
-<p><b>Add the following code to your app.js</b></p>
-<p><b></b></p>
+        <p><b>Copy the code to your app.js file</b></p>  
+        <p>In the next code example, we have 5 endpoints you can try out to manage data </p>
+        <p>You can try the GET methods in your browser or you can download <a href="https://www.postman.com/downloads/">Postman</a> to try them all.</p>
 
-    <pre><code class="language-javascript">app.use(express.json()); //Allows saving in json format.
+        <pre><code class="language-javascript">app.use(express.json()); //Allows saving in json format.
         
 //Get all songs
 app.get("/songs", (req, res) => {
@@ -80,14 +81,14 @@ const songs = [{
 </code></pre><br><br>
 
 
-    <div class="nav-buttons">
-        <div class="left-button">
-            <a href="/firstServer"><span><i class="material-icons">keyboard_double_arrow_left</i><span
-                        class="icon-text"></span></a><br>
+        <div class="nav-buttons">
+            <div class="left-button">
+                <a href="/firstServer"><span><i class="material-icons">keyboard_double_arrow_left</i><span
+                            class="icon-text"></span></a><br>
+            </div>
+            <div class="rigt-button">
+                <a href="/fetch"><span><i class="material-icons">keyboard_double_arrow_right</i><span
+                            class="icon-text"></span></a><br>
+            </div>
         </div>
-        <div class="rigt-button">
-            <a href="/firstPage"><span><i class="material-icons">keyboard_double_arrow_right</i><span
-                        class="icon-text"></span></a><br>
-        </div>
-    </div>
 </div>

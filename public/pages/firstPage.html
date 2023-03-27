@@ -1,5 +1,5 @@
 <div id="main">
-    <h1>3. HTML </h1><br>
+    <h1>4. HTML </h1><br>
     <h2>What is HTML?</h2>
     <p>HTML stands for Hypertext Markup Language. It is the standard language used to create web pages
         and websites. HTML is a markup language that uses a set of tags and attributes to describe the
@@ -7,11 +7,12 @@
         the document and renders it into a visually appealing web page that users can interact with.
         In short, HTML is the foundation of the web and is essential for creating websites and web applications.</p>
 
-    <p><b>Here is a basic HTML template you can use for now:</b></p>
+    <p><b>Here is a basic HTML template you can use for now. Create an index.html file with it. We will use it in our
+            next chapter <a href="/loadHTML">4. Serve HTML</a>.</b></p>
     <pre><code class="language-markup">&lt;!DOCTYPE html>
 &lt;html lang="en">
 &lt;head>
-    &lt;title>Document&lt;/title>
+    &lt;title>I'm the title&lt;/title>
 &lt;/head>
 &lt;body>
 &lt;h1>I'm an h1 title&lt;/h1> 
@@ -20,19 +21,19 @@
 &lt;/html>
 </code></pre>
 
-<p><b>Use these 3 html tags to create your HTML page!</b></p>
+    <p><b>Use these 3 html tags to create your HTML page!</b></p>
 
-<form class="create-site-form" method="POST" action="/yourPage">
-    <label><b>Title</b></label><input name="title"><br>
-    <label><b>h1</b></label><input name="h1"><br>
-    <label><b>p</b></label><textarea rows="12" name="p"></textarea>
-    <button type="submit">Visit site</button>
-  </form>
+    <form class="create-site-form" method="POST" action="/yourPage">
+        <label><b>title</b></label><input name="title"><br>
+        <label><b>h1</b></label><input name="h1"><br>
+        <label><b>p</b></label><textarea rows="12" name="p"></textarea>
+        <button type="submit">Visit site</button>
+    </form><br><br>
 
 
     <div class="nav-buttons">
         <div class="left-button">
-            <a href="/restAPI"><span><i class="material-icons">keyboard_double_arrow_left</i><span
+            <a href="/fetch"><span><i class="material-icons">keyboard_double_arrow_left</i><span
                         class="icon-text"></span></a><br>
         </div>
         <div class="rigt-button">
