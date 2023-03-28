@@ -5,15 +5,43 @@
         etc. to interact with resources (data) on a web server. REST is a design architecture
         for building networked applications.</p><br>
 
-    <h2><b>API conventions</b></h3>
-        <p><b>1. Order by the type of request!</b></p>
-        <p><b>2. Endpoints are always plural!</b></p>
+    <h2><b>Endpoint naming standards</b></h2>
+    <p>It is important to choose meaningful and consistent naming standards for endpoints to make them easily
+        understandable and maintainable. There are various naming standards for endpoints, but some common practices
+        include:</p>
 
-        <image src="/assets/images/restAPI.jpg" class="center"></image><br><br>
+    <p><b>1. Use plural nouns to represent resources:</b> Endpoints should represent a resource, and the name of the
+        endpoint
+        should be a plural noun that describes the resource. For example, /songs to represent a collection of songs.
+    </p>
+    <p><b>2. Use lowercase and hyphens for readability:</b> Endpoint names should be in all lowercase, and hyphens
+        can be
+        used to separate words for better readability. For example, /best-selling-songs instead of /bestSellingSongs
+    </p>
+    <p><b>3. Use HTTP methods for different actions:</b> Different HTTP methods should be used for different actions
+        on a resource. For example, GET /songs to retrieve a list of songs, POST /songs to create a new song,
+        PUT /songs/:id to update a song, and DELETE /songs/:id to delete a song.
+    </p>
+    <p><b>4. Use nouns for resources and verbs for actions:</b> Endpoint names should be descriptive and represent
+        the resource and action being performed. For example, /albums/:id/songs to represent the songs of an album,
+        and
+        /albums/:id/songs/:song_id to represent a specific song of an album.
+    </p><br><br>
 
-        <p><b>Copy the code to your app.js file</b></p>  
-        <p>In the next code example, we have 5 endpoints you can try out to manage data </p>
-        <p>You can try the GET methods in your browser or you can download <a href="https://www.postman.com/downloads/">Postman</a> to try them all.</p>
+
+
+
+    <image src="/assets/images/restAPI.jpg" class="center"></image><br><br>
+
+
+    <h2><b>Fetch examples</b></h3>
+
+        <p><b>Copy the next code exapmle to your app.js file</b></p>
+        <p>Here you can see 5 API endpoints, that we can use to manipulate json objects. At the bottom of
+            the code, there is an array of song objects that will serve as our database for now.</p>
+        <p>You can try the GET methods in your browser while your server is running by calling the endpoints
+            (http://localhost:8080/songs)
+            or you can download <a href="https://www.postman.com/downloads/">Postman</a> to try them all.</p>
 
         <pre><code class="language-javascript">app.use(express.json()); //Allows saving in json format.
         
@@ -86,7 +114,7 @@ const songs = [{
                 <a href="/firstServer"><span><i class="material-icons">keyboard_double_arrow_left</i><span
                             class="icon-text"></span></a><br>
             </div>
-            <div class="rigt-button">
+            <div class="right-button">
                 <a href="/fetch"><span><i class="material-icons">keyboard_double_arrow_right</i><span
                             class="icon-text"></span></a><br>
             </div>

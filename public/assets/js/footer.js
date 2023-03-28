@@ -1,1 +1,3 @@
-document.getElementById("footer").innerText = "© " + new Date().getFullYear();
+const yearSpan = document.getElementById("year");
+const currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;

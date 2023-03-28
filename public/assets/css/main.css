@@ -8,6 +8,12 @@ h3 {
   text-align: center;
 }
 
+button {
+  background-color: rgb(53, 190, 32);
+  color: white;
+  border-color: green;
+}
+
 .sidemenu {
   height: 100%;
   width: 85px;
@@ -53,7 +59,7 @@ main .sidemenu {
 }
 
 #main {
-  background-color: white;
+  background-color: #f1f1f1;
   padding: 16px;
   margin-left: 30vh;
   margin-right: 30vh;
@@ -66,27 +72,31 @@ main .sidemenu {
 }
 
 .nav-buttons {
-  margin-left: 31%;
-  text-align: center;
+  color: rgb(53, 190, 32);
 }
 
 .left-button {
+  padding-left: 30%;
   float: left;
 }
 
+.left-button a {
+  color: rgb(53, 190, 32);
+}
+
 .right-button {
+  padding-right: 30%;
   float: right;
 }
+
+.right-button a {
+  color: rgb(53, 190, 32);
+}
+
 
 .node-logo {
   max-height: 25%;
   max-width: 25%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -101,6 +111,8 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 60vh;
+  max-height: 40vh;
 }
 
 .center-div {
@@ -109,7 +121,12 @@ textarea {
   left: 47.5%;
 }
 
-
+footer {
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+}
 
 @media screen and (max-height: 450px) {
   .sidebar {
