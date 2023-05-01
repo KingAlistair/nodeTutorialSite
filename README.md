@@ -12,7 +12,10 @@ The site covers a range of topics, including what Node.js is, how to create and 
 Node.js is a popular runtime environment for building scalable, high-performance applications. However, for those new to Node.js, it can be challenging to get started. The NodeTutorialSite project provides a comprehensive introduction to Node.js and helps users get up and running with the technology quickly and easily.
 
 ## How users can get started with the project
-To get started with NodeTutorialSite, you will need to have Node.js installed on your computer. Once Node.js is installed, you can clone the repository and run the application using the command npm start. The application will be hosted on localhost:8080.
+To get started with NodeTutorialSite, you will need to have Node.js installed. Once Node.js is installed, you can clone the repository and run the application using the command: node app.js. The application will be hosted on localhost:8080.
+
+## Where users can get help with the project
+If you need help with the project, you can reach out by opening an issue on the GitHub repository.
 
 ## Who maintains and contributes to the project
-NodeTutorialSite is currently maintained by [me](https://github.com/KingAlistair), who created the project as a part of the Node.js Mandatory I course. As an open-source project, contributions are welcome from the community.
+NodeTutorialSite is currently maintained by [KingAlistair](https://github.com/KingAlistair), who created the project as a part of the Node.js Mandatory I course. As an open-source project, contributions are welcome from the community.
