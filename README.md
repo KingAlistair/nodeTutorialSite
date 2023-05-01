@@ -3,7 +3,7 @@
 # NodeTutorialSite - Node.js Mandatory I.
 <p aling="center"><img src="https://user-images.githubusercontent.com/60754393/235304926-998a9687-ef02-48dd-85a1-f09ef12f9295.png" alt="node_icon" width="850" height="600"></p>
 
-# NodeTutorialSite
+## What the project does
 NodeTutorialSite is a tutorial site designed to help users learn the basics of Node.js. The project was created as a part of the Node.js Mandatory I course, with the purpose of allowing me to practice and learn Node.js while creating a useful tool for others.
 
 The site covers a range of topics, including what Node.js is, how to create and run a server, how to handle HTML pages with Express, and how to create endpoints to fetch data from the backend. The site is designed for users with little to no experience with Node.js, and the step-by-step instructions and code examples make it easy to follow along.
