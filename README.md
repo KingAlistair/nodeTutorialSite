@@ -14,8 +14,5 @@ Node.js is a popular runtime environment for building scalable, high-performance
 ## How users can get started with the project
 To get started with NodeTutorialSite, you will need to have Node.js installed on your computer. Once Node.js is installed, you can clone the repository and run the application using the command npm start. The application will be hosted on localhost:8080.
 
-## Where users can get help with your project
-If you encounter any issues or have any questions about NodeTutorialSite, you can reach out to the project maintainer via email at [maintainer_email_address]. Additionally, the project repository includes a detailed README file and code comments, which should help to address common questions and issues.
-
 ## Who maintains and contributes to the project
 NodeTutorialSite is currently maintained by [me](https://github.com/KingAlistair), who created the project as a part of the Node.js Mandatory I course. As an open-source project, contributions are welcome from the community.
