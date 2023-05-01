@@ -1,7 +1,7 @@
 
 
 # NodeTutorialSite - Node.js Mandatory I.
-<p aling="center"><img src="https://user-images.githubusercontent.com/60754393/235304926-998a9687-ef02-48dd-85a1-f09ef12f9295.png" alt="node_icon"></p>
+<p aling="center"><img src="https://user-images.githubusercontent.com/60754393/235304926-998a9687-ef02-48dd-85a1-f09ef12f9295.png" alt="node_icon" width="500" height="600"></p>
 
 # NodeTutorialSite
 NodeTutorialSite is a tutorial site designed to help users learn the basics of Node.js. The project was created as a part of the Node.js Mandatory I course, with the purpose of allowing me to practice and learn Node.js while creating a useful tool for others.
